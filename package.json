@@ -1,0 +1,33 @@
+{
+  "name": "generative_ai_node_typescripts",
+  "version": "1.0.0",
+  "description": "Open Ai text-text text-speech speech-tex etc...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node -r ts-node/register --env-file=.env src/basic/index.ts",
+    "basic_chat":"node -r ts-node/register --env-file=.env src/chat_app/basic_chat/index.ts",
+    "tools":"node -r ts-node/register --env-file=.env src/tools/index.ts",
+    "flight":"node -r ts-node/register --env-file=.env src/project/flightAssistant.ts"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raviroygit/Generative_Ai_Node_Typescripts.git"
+  },
+  "author": "Ravi Roy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raviroygit/Generative_Ai_Node_Typescripts/issues"
+  },
+  "homepage": "https://github.com/raviroygit/Generative_Ai_Node_Typescripts#readme",
+  "dependencies": {
+    "openai": "^4.52.0",
+    "tiktoken": "^1.0.15"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  }
+}

@@ -6,9 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node -r ts-node/register --env-file=.env src/basic/index.ts",
-    "basic_chat":"node -r ts-node/register --env-file=.env src/chat_app/basic_chat/index.ts",
-    "tools":"node -r ts-node/register --env-file=.env src/tools/index.ts",
-    "flight":"node -r ts-node/register --env-file=.env src/project/flightAssistant.ts"
+    "basic_chat": "node -r ts-node/register --env-file=.env src/chat_app/basic_chat/index.ts",
+    "tools": "node -r ts-node/register --env-file=.env src/tools/index.ts",
+    "flight": "node -r ts-node/register --env-file=.env src/project/flightAssistant.ts",
+    "image": "node -r ts-node/register --env-file=.env src/project/image.ts",
+    "audio": "node -r ts-node/register --env-file=.env src/project/audio.ts",
+    "embedding": "node -r ts-node/register --env-file=.env src/embedding/embedding.ts",
+    "similarity": "node -r ts-node/register --env-file=.env src/embedding/similarity.ts",
+    "movie_recommendation": "node -r ts-node/register --env-file=.env src/project/movie_recommendation/MovieRecommender.ts",
+    "chat_app_query_chroma_db": "node -r ts-node/register --env-file=.env src/chroma/RelevantInfo.ts",
+    "chat_app_query_pinecone": "node -r ts-node/register --env-file=.env src/pinecone/RelevantInfo.ts",
+    "pinecone": "node -r ts-node/register --env-file=.env src/pinecone/crud.ts"
+
 
   },
   "repository": {
@@ -22,6 +31,8 @@
   },
   "homepage": "https://github.com/raviroygit/Generative_Ai_Node_Typescripts#readme",
   "dependencies": {
+    "@pinecone-database/pinecone": "^2.2.2",
+    "chromadb": "^1.8.1",
     "openai": "^4.52.0",
     "tiktoken": "^1.0.15"
   },

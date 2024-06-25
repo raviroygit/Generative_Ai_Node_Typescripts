@@ -13,7 +13,7 @@
             "args": ["${relativeFile}"],
             "envFile": "${workspaceFolder}/.env",
             "console": "integratedTerminal",
-            "program": "${workspaceFolder}/src/chat_app/basic_chat/index.ts"
+            "program": "${workspaceFolder}/src/chroma/RelevantInfo.ts"
         }
     ]
 }
